@@ -20,7 +20,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7r-zF-znB">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.56470588239999997" green="0.074509803920000006" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="I7c-YU-KAh"/>
                                     <constraint firstAttribute="height" constant="200" id="dCA-dO-d7G"/>
@@ -65,14 +64,24 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="NrJ-V1-3Gg"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sz1-Jj-DAm">
+                                        <rect key="frame" x="0.0" y="60" width="600" height="40"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fxn-UX-uE6"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.37647058823529411" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Sz1-Jj-DAm" firstAttribute="leading" secondItem="bBK-tm-r8I" secondAttribute="leading" id="45H-xx-x6P"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sz1-Jj-DAm" secondAttribute="bottom" id="5pu-GN-fCA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sz1-Jj-DAm" secondAttribute="trailing" id="9qO-iZ-kgr"/>
                                     <constraint firstItem="eIr-FL-Ht3" firstAttribute="top" secondItem="bBK-tm-r8I" secondAttribute="top" constant="28" id="Mby-8i-Zeu"/>
                                     <constraint firstItem="eIr-FL-Ht3" firstAttribute="leading" secondItem="bBK-tm-r8I" secondAttribute="leading" constant="8" id="VOD-RQ-Hsn"/>
                                     <constraint firstAttribute="height" constant="100" id="YqK-TM-GWn"/>
@@ -96,7 +105,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="header" destination="bBK-tm-r8I" id="eBq-wH-Sej"/>
                         <outlet property="instagramPhoto" destination="o7r-zF-znB" id="u9N-Rh-r3X"/>
+                        <outlet property="navBarSectionsHolder" destination="Sz1-Jj-DAm" id="Df7-jk-zDG"/>
+                        <outlet property="selectedSectionLabel" destination="eIr-FL-Ht3" id="GSF-wh-7Rl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
