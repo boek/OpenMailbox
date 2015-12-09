@@ -5,11 +5,13 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 0,
+    "E215D8A17219AD387249699FAEBD94B3DE16460F" : 0,
     "DCD4275297D51BF3B21F38B5486B12AF0EF5F92A" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C590C6A6-5D10-44E5-9711-7B2B964B9029",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "openMailbox\/libs\/SwiftyJSON\/",
+    "E215D8A17219AD387249699FAEBD94B3DE16460F" : "openMailbox\/libs\/NavBarSections\/",
     "DCD4275297D51BF3B21F38B5486B12AF0EF5F92A" : "openMailbox\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "openMailbox",
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/f0go\/OpenMailbox.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DCD4275297D51BF3B21F38B5486B12AF0EF5F92A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/f0go\/NavBarSections.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E215D8A17219AD387249699FAEBD94B3DE16460F"
     }
   ]
 }

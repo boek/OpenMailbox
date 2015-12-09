@@ -16,10 +16,88 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7r-zF-znB">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.074509803920000006" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="I7c-YU-KAh"/>
+                                    <constraint firstAttribute="height" constant="200" id="dCA-dO-d7G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34d-Ww-38t">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aBs-ZT-8eh"/>
+                                    <constraint firstAttribute="width" constant="200" id="fNS-Dt-NDx"/>
+                                </constraints>
+                                <state key="normal" image="logoMail"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inbox 👌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-L5-clj">
+                                <rect key="frame" x="200" y="440" width="200" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0ox-qK-fhO"/>
+                                    <constraint firstAttribute="width" constant="200" id="YCZ-b8-pbJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBK-tm-r8I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inbox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIr-FL-Ht3">
+                                        <rect key="frame" x="8" y="28" width="584" height="21"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="NrJ-V1-3Gg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.37647058823529411" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eIr-FL-Ht3" firstAttribute="top" secondItem="bBK-tm-r8I" secondAttribute="top" constant="28" id="Mby-8i-Zeu"/>
+                                    <constraint firstItem="eIr-FL-Ht3" firstAttribute="leading" secondItem="bBK-tm-r8I" secondAttribute="leading" constant="8" id="VOD-RQ-Hsn"/>
+                                    <constraint firstAttribute="height" constant="100" id="YqK-TM-GWn"/>
+                                    <constraint firstAttribute="trailing" secondItem="eIr-FL-Ht3" secondAttribute="trailing" constant="8" id="czQ-j8-BUx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bBK-tm-r8I" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="2Ds-af-B3P"/>
+                            <constraint firstItem="34d-Ww-38t" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="5xc-ZN-Glj"/>
+                            <constraint firstItem="o7r-zF-znB" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="65t-L9-sZx"/>
+                            <constraint firstItem="o7r-zF-znB" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="6iM-mO-CCW"/>
+                            <constraint firstAttribute="trailing" secondItem="bBK-tm-r8I" secondAttribute="trailing" id="9K6-k8-Ze5"/>
+                            <constraint firstItem="K3W-L5-clj" firstAttribute="top" secondItem="34d-Ww-38t" secondAttribute="bottom" constant="40" id="9PX-e2-QTT"/>
+                            <constraint firstItem="bBK-tm-r8I" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="TIk-R5-L1H"/>
+                            <constraint firstItem="K3W-L5-clj" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="dgn-2G-Vvb"/>
+                            <constraint firstItem="34d-Ww-38t" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="o2q-CX-eEB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="instagramPhoto" destination="o7r-zF-znB" id="u9N-Rh-r3X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +146,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="logoMail" width="540" height="540"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

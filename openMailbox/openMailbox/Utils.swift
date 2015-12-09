@@ -15,9 +15,9 @@ struct Globals {
 
 class Utils {
  
-    class func makeJsonRequest (url: NSURL, callback: (json: JSON!, error: NSError!) -> Void, retryCount:Int = 0) {
+    class func makeJsonRequest (url: String, callback: (json: JSON!, error: NSError!) -> Void, retryCount:Int = 0) {
         print("📡 request: \(url)")
-        let request = NSMutableURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
+        let request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
         
         request.HTTPMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Accept")
@@ -44,9 +44,9 @@ class Utils {
         })
     }
     
-    class func makeJsonPost (json: JSON, url: NSURL, callback: (json: JSON!, error: NSError!) -> Void, retryCount:Int = 0) {
+    class func makeJsonPost (json: JSON, url: String, callback: (json: JSON!, error: NSError!) -> Void, retryCount:Int = 0) {
         print("📡 Post: \(url)")
-        let request = NSMutableURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 60)
+        let request = NSMutableURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 60)
         
         let content: NSData?
         do {

@@ -17,6 +17,10 @@
 		59C410871C18CB9E00173272 /* openMailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410861C18CB9E00173272 /* openMailboxUITests.swift */; };
 		59C410951C18CCCF00173272 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410941C18CCCF00173272 /* Utils.swift */; };
 		59C410981C18CE3E00173272 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410971C18CE3E00173272 /* SwiftyJSON.swift */; };
+		59C4109A1C18D18A00173272 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410991C18D18A00173272 /* APIConfig.swift */; };
+		59C410A01C18DEFC00173272 /* MenuSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4109D1C18DEFC00173272 /* MenuSectionCell.swift */; };
+		59C410A11C18DEFC00173272 /* NavBarSections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C4109E1C18DEFC00173272 /* NavBarSections.storyboard */; };
+		59C410A21C18DEFC00173272 /* NavBarSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4109F1C18DEFC00173272 /* NavBarSections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		59C410881C18CB9E00173272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C410941C18CCCF00173272 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		59C410971C18CE3E00173272 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../../libs/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		59C410991C18D18A00173272 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		59C4109D1C18DEFC00173272 /* MenuSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionCell.swift; sourceTree = "<group>"; };
+		59C4109E1C18DEFC00173272 /* NavBarSections.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavBarSections.storyboard; sourceTree = "<group>"; };
+		59C4109F1C18DEFC00173272 /* NavBarSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarSections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				59C410641C18CB9E00173272 /* AppDelegate.swift */,
+				59C410991C18D18A00173272 /* APIConfig.swift */,
 				59C410941C18CCCF00173272 /* Utils.swift */,
-				59C410661C18CB9E00173272 /* FirstViewController.swift */,
-				59C410681C18CB9E00173272 /* SecondViewController.swift */,
+				59C4109B1C18D1A900173272 /* Views */,
 				59C410961C18CE1900173272 /* Libs */,
 				59C4106A1C18CB9E00173272 /* Main.storyboard */,
 				59C4106D1C18CB9E00173272 /* Assets.xcassets */,
@@ -137,9 +145,30 @@
 		59C410961C18CE1900173272 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				59C4109C1C18DEFC00173272 /* NavBarSections */,
 				59C410971C18CE3E00173272 /* SwiftyJSON.swift */,
 			);
 			name = Libs;
+			sourceTree = "<group>";
+		};
+		59C4109B1C18D1A900173272 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59C410661C18CB9E00173272 /* FirstViewController.swift */,
+				59C410681C18CB9E00173272 /* SecondViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		59C4109C1C18DEFC00173272 /* NavBarSections */ = {
+			isa = PBXGroup;
+			children = (
+				59C4109D1C18DEFC00173272 /* MenuSectionCell.swift */,
+				59C4109E1C18DEFC00173272 /* NavBarSections.storyboard */,
+				59C4109F1C18DEFC00173272 /* NavBarSections.swift */,
+			);
+			name = NavBarSections;
+			path = ../../libs/NavBarSections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +277,7 @@
 			files = (
 				59C410711C18CB9E00173272 /* LaunchScreen.storyboard in Resources */,
 				59C4106E1C18CB9E00173272 /* Assets.xcassets in Resources */,
+				59C410A11C18DEFC00173272 /* NavBarSections.storyboard in Resources */,
 				59C4106C1C18CB9E00173272 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C410691C18CB9E00173272 /* SecondViewController.swift in Sources */,
+				59C410A21C18DEFC00173272 /* NavBarSections.swift in Sources */,
 				59C410651C18CB9E00173272 /* AppDelegate.swift in Sources */,
+				59C4109A1C18D18A00173272 /* APIConfig.swift in Sources */,
 				59C410671C18CB9E00173272 /* FirstViewController.swift in Sources */,
+				59C410A01C18DEFC00173272 /* MenuSectionCell.swift in Sources */,
 				59C410981C18CE3E00173272 /* SwiftyJSON.swift in Sources */,
 				59C410951C18CCCF00173272 /* Utils.swift in Sources */,
 			);
