@@ -15,6 +15,8 @@
 		59C410711C18CB9E00173272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C4106F1C18CB9E00173272 /* LaunchScreen.storyboard */; };
 		59C4107C1C18CB9E00173272 /* openMailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4107B1C18CB9E00173272 /* openMailboxTests.swift */; };
 		59C410871C18CB9E00173272 /* openMailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410861C18CB9E00173272 /* openMailboxUITests.swift */; };
+		59C410951C18CCCF00173272 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410941C18CCCF00173272 /* Utils.swift */; };
+		59C410981C18CE3E00173272 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410971C18CE3E00173272 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		59C410821C18CB9E00173272 /* openMailboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openMailboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C410861C18CB9E00173272 /* openMailboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openMailboxUITests.swift; sourceTree = "<group>"; };
 		59C410881C18CB9E00173272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59C410941C18CCCF00173272 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		59C410971C18CE3E00173272 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../../libs/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				59C410641C18CB9E00173272 /* AppDelegate.swift */,
+				59C410941C18CCCF00173272 /* Utils.swift */,
 				59C410661C18CB9E00173272 /* FirstViewController.swift */,
 				59C410681C18CB9E00173272 /* SecondViewController.swift */,
+				59C410961C18CE1900173272 /* Libs */,
 				59C4106A1C18CB9E00173272 /* Main.storyboard */,
 				59C4106D1C18CB9E00173272 /* Assets.xcassets */,
 				59C4106F1C18CB9E00173272 /* LaunchScreen.storyboard */,
@@ -126,6 +132,14 @@
 				59C410881C18CB9E00173272 /* Info.plist */,
 			);
 			path = openMailboxUITests;
+			sourceTree = "<group>";
+		};
+		59C410961C18CE1900173272 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				59C410971C18CE3E00173272 /* SwiftyJSON.swift */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,8 @@
 				59C410691C18CB9E00173272 /* SecondViewController.swift in Sources */,
 				59C410651C18CB9E00173272 /* AppDelegate.swift in Sources */,
 				59C410671C18CB9E00173272 /* FirstViewController.swift in Sources */,
+				59C410981C18CE3E00173272 /* SwiftyJSON.swift in Sources */,
+				59C410951C18CCCF00173272 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
