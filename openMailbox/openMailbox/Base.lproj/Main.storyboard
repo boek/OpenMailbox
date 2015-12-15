@@ -37,12 +37,7 @@
                                     <constraint firstAttribute="height" constant="200" id="aBs-ZT-8eh"/>
                                     <constraint firstAttribute="width" constant="200" id="fNS-Dt-NDx"/>
                                 </constraints>
-                                <state key="normal" image="logoMail"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <state key="normal" image="logoMailWhite"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inbox 👌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-L5-clj">
                                 <rect key="frame" x="200" y="440" width="200" height="30"/>
@@ -158,7 +153,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="logoMail" width="540" height="540"/>
+        <image name="logoMailWhite" width="540" height="540"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

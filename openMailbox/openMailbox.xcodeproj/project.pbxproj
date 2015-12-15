@@ -239,6 +239,7 @@
 				TargetAttributes = {
 					59C410601C18CB9E00173272 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 8P26MFFBDF;
 					};
 					59C410761C18CB9E00173272 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -450,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = openMailbox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -462,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = openMailbox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -537,6 +540,7 @@
 				59C4108D1C18CB9E00173272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59C4108E1C18CB9E00173272 /* Build configuration list for PBXNativeTarget "openMailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +549,7 @@
 				59C410901C18CB9E00173272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59C410911C18CB9E00173272 /* Build configuration list for PBXNativeTarget "openMailboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +558,7 @@
 				59C410931C18CB9E00173272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
