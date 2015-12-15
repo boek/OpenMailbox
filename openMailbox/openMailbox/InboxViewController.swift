@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class InboxViewController: UIViewController {
     
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var instagramPhoto: UIImageView!
