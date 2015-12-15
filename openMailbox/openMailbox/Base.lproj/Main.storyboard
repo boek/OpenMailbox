@@ -104,29 +104,29 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-XA-BeG">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="98G-gj-AaL">
-                                                            <rect key="frame" x="8" y="40" width="40" height="40"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="98G-gj-AaL">
+                                                            <rect key="frame" x="20" y="45" width="30" height="30"/>
                                                             <animations/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="40" id="deP-Rr-R0b"/>
-                                                                <constraint firstAttribute="height" constant="40" id="jKP-N8-oFF"/>
+                                                                <constraint firstAttribute="width" constant="30" id="deP-Rr-R0b"/>
+                                                                <constraint firstAttribute="height" constant="30" id="jKP-N8-oFF"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IJ8-PO-Kcq">
-                                                            <rect key="frame" x="552" y="40" width="40" height="40"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IJ8-PO-Kcq">
+                                                            <rect key="frame" x="550" y="45" width="30" height="30"/>
                                                             <animations/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="40" id="IPz-Fm-Vze"/>
-                                                                <constraint firstAttribute="height" constant="40" id="MGz-8K-ySM"/>
+                                                                <constraint firstAttribute="width" constant="30" id="IPz-Fm-Vze"/>
+                                                                <constraint firstAttribute="height" constant="30" id="MGz-8K-ySM"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
                                                     <animations/>
-                                                    <color key="backgroundColor" red="0.56470588239999997" green="0.074509803920000006" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="98G-gj-AaL" firstAttribute="leading" secondItem="RpD-XA-BeG" secondAttribute="leading" constant="8" id="4Fz-R6-HQe"/>
+                                                        <constraint firstItem="98G-gj-AaL" firstAttribute="leading" secondItem="RpD-XA-BeG" secondAttribute="leading" constant="20" id="4Fz-R6-HQe"/>
                                                         <constraint firstItem="98G-gj-AaL" firstAttribute="centerY" secondItem="RpD-XA-BeG" secondAttribute="centerY" id="TyA-Xc-ycg"/>
-                                                        <constraint firstAttribute="trailing" secondItem="IJ8-PO-Kcq" secondAttribute="trailing" constant="8" id="azj-60-4ry"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IJ8-PO-Kcq" secondAttribute="trailing" constant="20" id="azj-60-4ry"/>
                                                         <constraint firstItem="IJ8-PO-Kcq" firstAttribute="centerY" secondItem="RpD-XA-BeG" secondAttribute="centerY" id="cBF-Aa-VWV"/>
                                                     </constraints>
                                                 </view>
@@ -209,6 +209,9 @@
                                                         <constraint firstAttribute="bottom" secondItem="Slb-ad-tRx" secondAttribute="bottom" id="UKU-45-xHY"/>
                                                         <constraint firstAttribute="trailing" secondItem="Slb-ad-tRx" secondAttribute="trailing" id="klA-WH-SZH"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Ypc-ss-ttz" id="Gta-w0-ppu"/>
+                                                    </connections>
                                                 </scrollView>
                                                 <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYO-b5-Qlp" userLabel="Bottom Line">
                                                     <rect key="frame" x="0.0" y="119" width="600" height="1"/>
@@ -239,7 +242,10 @@
                                             <constraint firstItem="RpD-XA-BeG" firstAttribute="leading" secondItem="Ypc-ss-ttz" secondAttribute="leading" id="yBl-ei-PZB"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="backView" destination="RpD-XA-BeG" id="Izb-Ao-6oO"/>
                                             <outlet property="cellScroll" destination="nVY-fv-aCc" id="lG8-fa-FaE"/>
+                                            <outlet property="leftImage" destination="98G-gj-AaL" id="1dZ-q6-k9b"/>
+                                            <outlet property="rightImage" destination="IJ8-PO-Kcq" id="ppo-mc-hpy"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
