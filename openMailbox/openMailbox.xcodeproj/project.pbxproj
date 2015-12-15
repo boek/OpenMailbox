@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591D23181C20C79500310C51 /* ListEmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D23171C20C79500310C51 /* ListEmailCell.swift */; };
 		59C410651C18CB9E00173272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410641C18CB9E00173272 /* AppDelegate.swift */; };
 		59C410671C18CB9E00173272 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410661C18CB9E00173272 /* InboxViewController.swift */; };
 		59C410691C18CB9E00173272 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C410681C18CB9E00173272 /* SecondViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		591D23171C20C79500310C51 /* ListEmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEmailCell.swift; sourceTree = "<group>"; };
 		59C410611C18CB9E00173272 /* openMailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openMailbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C410641C18CB9E00173272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C410661C18CB9E00173272 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				59C410661C18CB9E00173272 /* InboxViewController.swift */,
+				591D23171C20C79500310C51 /* ListEmailCell.swift */,
 				59C410681C18CB9E00173272 /* SecondViewController.swift */,
 			);
 			name = Views;
@@ -308,6 +311,7 @@
 				59C410A21C18DEFC00173272 /* NavBarSections.swift in Sources */,
 				59C410651C18CB9E00173272 /* AppDelegate.swift in Sources */,
 				59C4109A1C18D18A00173272 /* APIConfig.swift in Sources */,
+				591D23181C20C79500310C51 /* ListEmailCell.swift in Sources */,
 				59C410671C18CB9E00173272 /* InboxViewController.swift in Sources */,
 				59C410A01C18DEFC00173272 /* MenuSectionCell.swift in Sources */,
 				59C410981C18CE3E00173272 /* SwiftyJSON.swift in Sources */,

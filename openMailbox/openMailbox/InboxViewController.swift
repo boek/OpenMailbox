@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InboxViewController: UIViewController {
+class InboxViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var instagramPhoto: UIImageView!
@@ -22,6 +22,19 @@ class InboxViewController: UIViewController {
     override func viewDidLoad() {
         getInstagramImage()
         loadLabels()
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ListEmailCell", forIndexPath: indexPath) as! ListEmailCell
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize(width: self.view.frame.width, height: 120)
     }
     
     func getInstagramImage(){
